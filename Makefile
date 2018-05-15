@@ -13,7 +13,7 @@ push_i686:
 	docker push pushamp/rust-manylinux-base-i686:$(TAG)
 
 build_x86_64:
-	docker build –no-cache --tag pushamp/rust-manylinux-base-x86_64:$(TAG) -f Dockerfile-x86_64 .
+	docker build –-no-cache --tag pushamp/rust-manylinux-base-x86_64:$(TAG) -f Dockerfile-x86_64 .
 
 build_i686:
-	docker build –no-cache --tag pushamp/rust-manylinux-base-i686:$(TAG) -f Dockerfile-i686 .
+	docker build –-no-cache --tag pushamp/rust-manylinux-base-i686:$(TAG) -f Dockerfile-i686 .
